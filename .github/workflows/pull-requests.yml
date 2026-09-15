@@ -1,0 +1,12 @@
+name: pull requests
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  uneditable:
+    uses: ugarit/.github/.github/workflows/pull-requests.yml@c265c45c41ccb723befb7a2b807dffff4595bd39 # main

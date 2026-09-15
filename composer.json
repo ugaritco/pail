@@ -1,0 +1,83 @@
+{
+    "name": "ugarit/pail",
+    "description": "Easily delve into your Ugarit application's log files directly from the command line.",
+    "keywords": [
+        "php",
+        "tail",
+        "ugarit",
+        "logs",
+        "dev"
+    ],
+    "homepage": "https://github.com/ugarit/pail",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ugarit/pail/issues",
+        "source": "https://github.com/ugarit/pail"
+    },
+    "authors": [
+        {
+            "name": "Muath R Abu Ouda",
+            "email": "muathrabuouda@hotmail.com",
+            "role": "Vision Leader of Ugarit"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com",
+            "role": "Original Creator & Primary Developer"
+        },
+        {
+            "name": "Nuno Maduro",
+            "email": "enunomaduro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-mbstring": "*",
+        "heritage/console": "^1.00.00",
+        "heritage/contracts": "^1.00.00",
+        "heritage/log": "^1.00.00",
+        "heritage/process": "^1.00.00",
+        "heritage/support": "^1.00.00",
+        "nunomaduro/termwind": "^1.15|^2.0",
+        "symfony/console": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "ugarit/framework": "^1.00.00",
+        "ugarit/pint": "^1.00.00",
+        "orchestra/testbench-core": "^8.13|^9.17|^10.8|^11.0",
+        "pestphp/pest": "^2.20|^3.0|^4.0",
+        "pestphp/pest-plugin-type-coverage": "^2.3|^3.0|^4.0",
+        "phpstan/phpstan": "^1.12.27",
+        "symfony/var-dumper": "^6.3|^7.0|^8.0",
+        "symfony/yaml": "^6.3|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ugarit\\Pail\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "ugarit": {
+            "providers": [
+                "Ugarit\\Pail\\PailServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.00.00"
+}

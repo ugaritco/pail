@@ -1,0 +1,6 @@
+providers:
+  - Ugarit\Pail\PailServiceProvider
+
+workbench:
+  discovers:
+    commands: true
